@@ -1,0 +1,79 @@
+// fonts 文字管理
+$fz-root: 1px;
+
+$text-align:"l","c","r";
+$text-align-base:(
+    "l":left,
+    "c":center,
+    "r":right
+);
+
+// spacing 管理
+$spacing-root: 1px;
+$rwd-reakpoints:"xl","lg","md","sm","xs";
+$rwd-reakpoint-base:(
+    "xs":0,
+    "sm":576px,
+    "md":768px,
+    "lg":992px,
+    "xl":1200px,
+    "xxl":1400px
+);
+$margin-direction:"t","e","b","s";
+$margin-direction-base:(
+    "t":"top",
+    "e":"right",
+    "b":"bottom",
+    "s":"left"
+);
+$padding-direction:"t","e","b","s";
+$padding-direction-base:(
+    "t":"top",
+    "e":"right",
+    "b":"bottom",
+    "s":"left"
+);
+
+// display
+$display: none,block,inline-block,flex,inline-flex,table;
+
+// position
+$position: "s","a","r","f";
+$position-base:(
+    "s":static,
+    "a":absolute,
+    "r":relative,
+    "f":fixed
+);
+
+
+// flex 管理
+$flex-direction: row,column,row-reverse,column-reverse;
+
+$flex-wrap:"w","nw","wr";
+$flex-wrap-base:(
+    "w":wrap,
+    "nw":nowrap,
+    "wr":wrap-reverse
+);
+
+$justify-content:"fs","fe","c","sb","sa","se","stretch","baseline";
+$justify-content-base:(
+    "fs":flex-start,
+    "fe":flex-end,
+    "c":center,
+    "sb":space-between,
+    "sa":space-around,
+    "se":space-evenly,
+    "stretch":stretch,
+    "baseline":baseline
+);
+
+// Width 寬度管理
+$width-base:(
+    25:25%,
+    50:50%,
+    75:75%,
+    100:100%,
+    auto:auto
+);

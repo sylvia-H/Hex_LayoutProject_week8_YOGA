@@ -1,0 +1,53 @@
+/* Spacing - margin */
+@for $i from 0 through 200{
+    .m-#{$i}{
+        margin: $spacing-root * $i !important;
+    }
+}
+
+@each $d in $margin-direction {
+    @for $i from 0 through 200{
+        .m#{$d}-#{$i}{
+            margin-#{map-get($margin-direction-base, $d)}: $spacing-root * $i !important;
+        }
+    }
+}
+
+@each $d in $margin-direction {
+    @each $rwd in $rwd-reakpoints {
+        @for $i from 0 through 200{
+            @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+                .m#{$d}-#{$rwd}-#{$i}{
+                    margin-#{map-get($margin-direction-base, $d)}: $spacing-root * $i !important;
+                }
+            }
+        }
+    }
+}
+
+/* Spacing - padding */
+@for $i from 0 through 200{
+    .p-#{$i}{
+        padding: $spacing-root * $i !important;
+    }
+}
+
+@each $d in $padding-direction {
+    @for $i from 0 through 200{
+        .p#{$d}-#{$i}{
+            padding-#{map-get($padding-direction-base, $d)}: $spacing-root * $i !important;
+        }
+    }
+}
+
+@each $d in $padding-direction {
+    @each $rwd in $rwd-reakpoints {
+        @for $i from 0 through 200{
+            @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+                .p#{$d}-#{$rwd}-#{$i}{
+                    padding-#{map-get($padding-direction-base, $d)}: $spacing-root * $i !important;
+                }
+            }
+        }
+    }
+}

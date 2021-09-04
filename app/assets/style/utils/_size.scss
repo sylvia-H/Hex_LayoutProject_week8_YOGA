@@ -1,0 +1,21 @@
+// 本專案尺寸
+.w-100px{
+    width: 100px;
+}
+
+/* Width 寬度設定 */
+@each $w, $w-value in $width-base {
+    .w-#{$w}{
+        width: $w-value;
+    }
+}
+
+@each $w, $w-value in $width-base {
+    @each $rwd in $rwd-reakpoints {
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .w-#{$rwd}-#{$w}{
+                width: $w-value;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+/* 對齊 */
+@each $ta in $text-align {
+    .ta#{$ta}{
+        text-align: map-get($text-align-base, $ta);
+    }
+}
+
+@each $ta in $text-align {
+    @each $rwd in $rwd-reakpoints {
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .ta-#{$rwd}-#{$ta}{
+                text-align: map-get($text-align-base, $ta);
+            }
+        }
+    }
+}
+
+
+/* font-size 文字大小 */
+// 自創 class，名稱以 .fz- 開頭
+@for $i from 1 through 150{
+    .fz-#{$i}{
+        font-size: $fz-root * $i;
+    }
+}
+
+@each $rwd in $rwd-reakpoints {
+    @for $i from 1 through 150{
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .fz-#{$rwd}-#{$i}{
+                font-size: $fz-root * $i;
+            }
+        }
+    }
+}
+
+// 結合使用 BS5 變數 $font-sizes (讓 h1~h6 也有 RWD 效果) 因此 class 名稱也以 .fs- 開頭
+@each $h, $fs in $font-sizes {
+    @each $rwd in $rwd-reakpoints {
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .fs-#{$rwd}-#{$h}{
+                font-size: $fs !important;
+            }
+        }
+    }
+}
+
+
+/* line-height 文字行高 */
+@for $i from 2 through 150{
+    .lh-#{$i}{
+        line-height: $fz-root * $i;
+    }
+}
+
+@each $rwd in $rwd-reakpoints {
+    @for $i from 2 through 150{
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .lh-#{$rwd}-#{$i}{
+                line-height: $fz-root * $i;
+            }
+        }
+    }
+}
+
+/* font-style 斜體字 */
+.italic{
+    font-style: italic;
+}
+
+
+/* font-weight 文字粗細 */
+@for $i from 1 through 9{
+    .fw-#{$i*100}{
+        font-weight: $i * 100;
+    }
+}
+
+@each $rwd in $rwd-reakpoints {
+    @for $i from 1 through 9{
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .fw-#{$rwd}-#{$i*100}{
+                font-weight: $i * 100;
+            }
+        }
+    }
+}

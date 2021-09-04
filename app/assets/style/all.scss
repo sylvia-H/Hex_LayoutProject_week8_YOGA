@@ -1,6 +1,20 @@
+/* Base */
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
+@import "./helpers/variables-BS5";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./base/base";
+
+/* Utils */
+@import "./utils/variable";
+@import "./utils/fonts";
+@import "./utils/spacing";
+@import "./utils/img";
+@import "./utils/flex";
+@import "./utils/size";
+@import "./utils/hover/hover.scss";
+@import "./utils/select.scss";
+
+/* Components */
 
 
-@import './layout/index.scss'
+/* Layout */
