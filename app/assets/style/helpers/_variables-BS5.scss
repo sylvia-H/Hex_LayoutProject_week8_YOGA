@@ -274,6 +274,12 @@ $spacers: (
   10: $spacer * 3,
   11: $spacer * 3.5,
   12: $spacer * 4,
+  13: $spacer * 4.5,
+  14: $spacer * 5,
+  15: $spacer * 5.5,
+  16: $spacer * 6,
+  17: $spacer * 6.5,
+  18: $spacer * 7,
   30: 30px,
 ) !default;
 
@@ -556,7 +562,7 @@ $table-cell-padding-x-sm:     .25rem !default;
 
 $table-cell-vertical-align:   top !default;
 
-$table-color:                 $body-color !default;
+$table-color:                 $secondary;// $body-color !default;
 $table-bg:                    transparent !default;
 $table-accent-bg:             transparent !default;
 
@@ -572,7 +578,7 @@ $table-active-bg:             rgba($black, $table-active-bg-factor) !default;
 
 $table-hover-color:           $table-color !default;
 $table-hover-bg-factor:       .075 !default;
-$table-hover-bg:              rgba($black, $table-hover-bg-factor) !default;
+$table-hover-bg:              rgba($table-color, $table-hover-bg-factor) !default; // rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor:         .1 !default;
 $table-border-width:          $border-width !default;
