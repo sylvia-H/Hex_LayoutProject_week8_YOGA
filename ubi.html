@@ -1,0 +1,102 @@
+<!-- 精心設計、課程多元 -->
+<section class="bg-light | py-10 py-md-11 py-lg-12">
+    <div class="container position-relative">
+        <div class="position-absolute top-50 start-0 translate-middle-y w-100">
+            <div class="container">
+                <div class="row">
+                    <!-- Info -->
+                    <div class="col-12 col-md-6 offset-lg-1 col-lg-5 |d-flex flex-column jc-c">
+                        <div class="row">
+                            <h3 class="text-secondary | mb-1">精心設計、課程多元</h3>
+                            <h5 class="text-primary fw-normal | mb-4 mb-md-6">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</h5>
+                            <a href="#" class="mb-4">
+                                <h6 class="d-flex ai-c | text-secondary">
+                                    課程介紹
+                                    <span class="material-icons text-secondary">trending_flat</span>
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-end">
+
+            <!-- swiper -->
+            <div class="col-6 | d-none d-lg-block | overflow-hidden">
+                <div class="courseSwiper swiper-container">
+                    <div class="swiper-wrapper">
+                    <!-- 第一張 -->
+                    <div class="swiper-slide unselectable">
+                        <img src="./assets/images/index-course-1.jpg" class="img-fluid rounded-4" alt="recommand-1">
+                    </div>
+                    
+                    <!-- 第二張 -->
+                    <div class="swiper-slide unselectable">
+                        <img src="./assets/images/index-course-2.jpg" class="img-cover rounded-4" alt="recommand-2">
+                    </div>
+                    
+                    <!-- 第三張 -->
+                    <div class="swiper-slide unselectable">
+                        <img src="./assets/images/Hatha.jpg" class="img-cover rounded-4" alt="recommand-3">
+                    </div>
+                    
+                    <!-- 第四張 -->
+                    <div class="swiper-slide unselectable">
+                        <img src="./assets/images/Aroma-Yoga.jpg" class="img-cover rounded-4" alt="recommand-3">
+                    </div>
+                    
+                    <!-- swiper-pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+"use strict";
+
+(function () {
+  'use strict'; // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+
+  var breakpoint = window.matchMedia('(max-width: 992px)'); // keep track of swiper instances to destroy later
+
+  var courseSwiper; //////////////////////////////////////////////////////////////////
+
+  var breakpointChecker = function breakpointChecker() {
+    // if larger viewport and multi-row layout needed
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (courseSwiper !== undefined) courseSwiper.destroy(true, true); // or/and do nothing
+
+      return; // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return enableSwiper();
+    }
+  }; //////////////////////////////////////////////////////////////////
+
+
+  var enableSwiper = function enableSwiper() {
+    courseSwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      spaceBetween: 30
+    });
+  }; //////////////////////////////////////////////////////////////////
+  // keep an eye on viewport size changes
+
+
+  breakpoint.addListener(breakpointChecker); // kickstart
+
+  breakpointChecker();
+})();
+/* IIFE end */

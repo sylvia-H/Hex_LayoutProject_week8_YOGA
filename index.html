@@ -88,7 +88,7 @@
       <!-- Hero -->
 <section>
     <div 
-        class="container-fluid bg-cover-bottom" 
+        class="container-fluid bg-cover-bottom overflow-hidden" 
         style="background-image: url('./assets/images/index-main.jpeg');height: calc(100vh - 84px);">
         <div class="row h-100">
             <div 
@@ -120,7 +120,7 @@
         <h3 class="text-secondary text-center | mb-1">感受身心，活在當下</h3>
         <h5 class="text-primary fw-normal text-center">DOYOGA 可以帶給你...</h5>
         <ul class="row | mt-8">
-            <li class="col-12 col-md-4" style="height: 420px;">
+            <li class="col-12 col-md-4 | mb-4 mb-md-0" style="height: 420px;">
                 <div class="card text-white bg-cover h-100"
                     style="background-image: url('./assets/images/index-feel-1.jpeg');">
                     <!-- .card-img-overlay 文字資訊區 -->
@@ -134,7 +134,7 @@
                     </div>
                 </div>
             </li>
-            <li class="col-12 col-md-4" style="height: 420px;">
+            <li class="col-12 col-md-4 | mb-4 mb-md-0" style="height: 420px;">
                 <div class="card text-white bg-cover h-100"
                     style="background-image: url('./assets/images/index-feel-2.jpeg');">
                     <!-- .card-img-overlay 文字資訊區 -->
@@ -271,51 +271,77 @@
 
 <!-- 精心設計、課程多元 -->
 <section class="bg-light | py-10 py-md-11 py-lg-12">
-    <div class="container position-relative">
-        <div class="position-absolute top-50 start-0 translate-middle-y w-100">
-            <div class="container">
-                <div class="row">
-                    <!-- Info -->
-                    <div class="col-12 col-md-6 offset-lg-1 col-lg-5 |d-flex flex-column jc-c">
-                        <div class="row">
-                            <h3 class="text-secondary | mb-1">精心設計、課程多元</h3>
-                            <h5 class="text-primary fw-normal | mb-4 mb-md-6">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</h5>
-                            <a href="#" class="mb-4">
-                                <h6 class="d-flex ai-c | text-secondary">
-                                    課程介紹
-                                    <span class="material-icons text-secondary">trending_flat</span>
-                                </h6>
-                            </a>
+    <div class="container">
+        <div class="row | ai-c">
+            <!-- Info -->
+            <div class="col-12 col-md-6 offset-lg-1 col-lg-5 | mb-4 mb-md-0">
+                <div>
+                    <h3 class="text-secondary | mb-1">精心設計、課程多元</h3>
+                    <h5 class="text-primary fw-normal | mb-4 mb-md-6">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</h5>
+                    <a href="#" class="mb-4">
+                        <h6 class="d-flex ai-c | text-secondary">
+                            課程介紹
+                            <span class="material-icons text-secondary">trending_flat</span>
+                        </h6>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 d-block d-lg-none">
+                <div class="row g-4 g-md-30">
+                    <div class="col-6">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/index-course-1.jpg" class="img-cover rounded-4" alt="recommand-1">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/index-course-2.jpg" class="img-cover rounded-4" alt="recommand-2">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/Hatha.jpg" class="img-cover rounded-4" alt="recommand-3">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/index-course-4.jpg" class="img-cover rounded-4" alt="recommand-4">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row justify-content-end">
-
-            <!-- swiper -->
-            <div class="col-6 overflow-hidden">
+            <!-- 桌機版顯示 swiper -->
+            <div class="col-6 | d-none d-lg-block | overflow-hidden">
                 <div class="courseSwiper swiper-container">
                     <div class="swiper-wrapper">
                     <!-- 第一張 -->
                     <div class="swiper-slide unselectable">
-                        <img src="./assets/images/index-course-1.jpg" class="img-fluid rounded-4" alt="recommand-1">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/index-course-1.jpg" class="img-cover rounded-4" alt="recommand-1">
+                        </div>
                     </div>
                     
                     <!-- 第二張 -->
                     <div class="swiper-slide unselectable">
-                        <img src="./assets/images/index-course-2.jpg" class="img-cover rounded-4" alt="recommand-2">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/index-course-2.jpg" class="img-cover rounded-4" alt="recommand-2">
+                        </div>
                     </div>
                     
                     <!-- 第三張 -->
                     <div class="swiper-slide unselectable">
-                        <img src="./assets/images/Hatha.jpg" class="img-cover rounded-4" alt="recommand-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/Hatha.jpg" class="img-cover rounded-4" alt="recommand-4">
+                        </div>
                     </div>
                     
                     <!-- 第四張 -->
                     <div class="swiper-slide unselectable">
-                        <img src="./assets/images/Aroma-Yoga.jpg" class="img-cover rounded-4" alt="recommand-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/index-course-4.jpg" class="img-cover rounded-4" alt="recommand-3">
+                        </div>
                     </div>
                     
                     <!-- swiper-pagination -->
@@ -323,9 +349,9 @@
                     
                 </div>
             </div>
+
+
         </div>
-
-
     </div>
 </section>
 
@@ -385,13 +411,12 @@
 <section class="bg-light | pt-8 pb-11 pt-md-9 pb-md-12">
     <div class="container">
         <h3 class="text-secondary text-center | mb-6 mb-md-8">聽聽他們怎麼說</h3>
-        <div class="row overflow-hidden">
-            <div class="customerSwiper swiper-container">
-                <div class="swiper-wrapper">
+        <div class="customerSwiper swiper-container overflow-hidden">
+            <ul class="swiper-wrapper">
                 <!-- 第一張 -->
-                <div class="swiper-slide unselectable">
+                <li class="swiper-slide unselectable">
                     <div class="card border-0 bg-white text-dark">
-                      <div class="d-flex ai-c | card-body | py-4 px-4">
+                        <div class="d-flex ai-c | card-body | py-4 px-4">
                         <!-- teacher__avatar -->
                         <div class="col-2 me-5">
                             <img src="./assets/images/user-1.png" class="card-image rounded-circle" alt="Joanne">
@@ -411,14 +436,14 @@
                             </div>
                             <p class="fs-6">服務很好、設備優良！</p>
                         </div>
-                      </div>
+                        </div>
                     </div>
-                </div>
-                
+                </li>
+            
                 <!-- 第二張 -->
-                <div class="swiper-slide unselectable">
+                <li class="swiper-slide unselectable">
                     <div class="card border-0 bg-white text-dark">
-                      <div class="d-flex ai-c | card-body | py-4 px-4">
+                        <div class="d-flex ai-c | card-body | py-4 px-4">
                         <!-- teacher__avatar -->
                         <div class="col-2 me-5">
                             <img src="./assets/images/user-2.png" class="card-image rounded-circle" alt="穎旻">
@@ -438,14 +463,14 @@
                             </div>
                             <p class="fs-6">上課後身體健康很多</p>
                         </div>
-                      </div>
+                        </div>
                     </div>
-                </div>
-                
+                </li>
+            
                 <!-- 第三張 -->
-                <div class="swiper-slide unselectable">
+                <li class="swiper-slide unselectable">
                     <div class="card border-0 bg-white text-dark">
-                      <div class="d-flex ai-c | card-body | py-4 px-4">
+                        <div class="d-flex ai-c | card-body | py-4 px-4">
                         <!-- teacher__avatar -->
                         <div class="col-2 me-5">
                             <img src="./assets/images/user-3.png" class="card-image rounded-circle" alt="子琪">
@@ -465,14 +490,14 @@
                             </div>
                             <p class="fs-6">上課很有趣！</p>
                         </div>
-                      </div>
+                        </div>
                     </div>
-                </div>
-                
+                </li>
+            
                 <!-- 第四張 -->
-                <div class="swiper-slide unselectable">
+                <li class="swiper-slide unselectable">
                     <div class="card border-0 bg-white text-dark">
-                      <div class="d-flex ai-c | card-body | py-4 px-4">
+                        <div class="d-flex ai-c | card-body | py-4 px-4">
                         <!-- teacher__avatar -->
                         <div class="col-2 me-5">
                             <img src="./assets/images/user-4.png" class="card-image rounded-circle" alt="葉子">
@@ -492,14 +517,14 @@
                             </div>
                             <p class="fs-6">老師的教學很專業</p>
                         </div>
-                      </div>
+                        </div>
                     </div>
-                </div>
+                </li>
                 
                 <!-- 第五張 -->
-                <div class="swiper-slide unselectable">
+                <li class="swiper-slide unselectable">
                     <div class="card border-0 bg-white text-dark">
-                      <div class="d-flex ai-c | card-body | py-4 px-4">
+                        <div class="d-flex ai-c | card-body | py-4 px-4">
                         <!-- teacher__avatar -->
                         <div class="col-2 me-5">
                             <img src="./assets/images/user-5.png" class="card-image rounded-circle" alt="Ray">
@@ -519,14 +544,14 @@
                             </div>
                             <p class="fs-6">很舒壓</p>
                         </div>
-                      </div>
+                        </div>
                     </div>
-                </div>
+                </li>
                 
                 <!-- 第六張 -->
-                <div class="swiper-slide unselectable">
+                <li class="swiper-slide unselectable">
                     <div class="card border-0 bg-white text-dark">
-                      <div class="d-flex ai-c | card-body | py-4 px-4">
+                        <div class="d-flex ai-c | card-body | py-4 px-4">
                         <!-- teacher__avatar -->
                         <div class="col-2 me-5">
                             <img src="./assets/images/user-6.png" class="card-image rounded-circle" alt="俊儀">
@@ -546,21 +571,22 @@
                             </div>
                             <p class="fs-6">讚的！</p>
                         </div>
-                      </div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- swiper-pagination -->
-                <div class="swiper-pagination swiper-pagination-horizontal | d-flex d-md-none jc-sb ai-c pt-4 pt-md-0">
-                    <a href="#" class="text-secondary swiper-prev">
-                      <span class="material-icons-outlined fs-1">west</span>
-                    </a>
-                    <a href="#" class="text-secondary swiper-next">
-                      <span class="material-icons-outlined fs-1">east</span>
-                    </a>
-                </div>
-                
+                </li>
+            
+            </ul>
+        
+            <!-- swiper-pagination -->
+            <div class="swiper-pagination | d-flex d-md-none jc-sb ai-c pt-4 pt-md-0">
+                <a href="#" class="text-secondary swiper-prev">
+                    <span class="material-icons-outlined fs-1">west</span>
+                </a>
+                <a href="#" class="text-secondary swiper-next">
+                    <span class="material-icons-outlined fs-1">east</span>
+                </a>
             </div>
+
         </div>
     </div>
 </section>
