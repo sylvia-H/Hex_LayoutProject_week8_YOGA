@@ -17,8 +17,8 @@
 
   <body>
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light | py-5">
+      <div class="container">
         <!-- DOYOGA-logo -->
         <a class="navbar-brand" href="./index.html">
           <img src="./assets/images/DOYOGA-logo.png" alt="DOYOGA" width="96px" height="31px">
@@ -28,39 +28,104 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- 選單內容 -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+            <li class="nav-item | me-16">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="#">
                 課程介紹
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-item | me-16">
+              <a class="nav-link text-dark | hvr-underline-from-center" href="#">
                 瑜珈空間
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="#">
                 當月課表
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                立即預約
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                聯絡我們
               </a>
             </li>
           </ul>
         </div>
+        <ul class="d-none d-lg-flex">
+          <li class="nav-item | me-16">
+            <a class="btn btn-outline-secondary rounded-pill" href="#">
+              立即預約
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary rounded-pill" href="#">
+              聯絡我們
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     
+
+    
+    <!-- footer 頁尾 -->
+    <footer class="bg-secondary">
+      <div class="container py-8">
+        <div class="row">
+          <div class="col-12 col-lg-8 | mb-8 mb-lg-0">
+            <h3 class="fs-4 fs-md-3 text-white">
+              現在訂閱，獲得課程優惠碼！
+            </h3>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 | mb-8 mb-lg-0">
+            <div class="input-group w-100">
+              <input type="text" class="form-control" placeholder="請輸入您的電子信箱" aria-label="Subscriber's email address">
+              <button class="btn btn-primary text-white px-4 py-2" type="button">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-bottom"></div>
+      <div class="container d-flex ai-c jc-sb py-8">
+        <!-- footer__menu -->
+        <ul>
+          <li class="mb-8">
+            <a href="#">
+              <img src="./assets/images/DOYOGA.png" alt="DOYOGA" width="96px" height="31px">
+            </a>
+          </li>
+          <li class="mb-8">
+            <a class="h6 fw-light text-white" href="#">課程介紹</a>
+          </li>
+          <li class="mb-8">
+            <a class="h6 fw-light text-white" href="#">瑜珈空間</a>
+          </li>
+          <li class="mb-8">
+            <a class="h6 fw-light text-white" href="#">當月課表</a>
+          </li>
+        </ul>
+        <!-- Copyright -->
+        <div class="d-flex align-self-end">
+          <p class="h6 text-white">© 2021. All Rights Reserved.</p>
+        </div>
+        <!-- footer__community -->
+        <ul class="d-flex align-self-start">
+          <li class="me-8">
+            <a href="#">
+              <img src="./assets/images/icon-fb.svg" alt="Facebook" width="24px" height="24px">
+            </a>
+          </li>
+          <li class="me-8">
+            <a href="#">
+              <img src="./assets/images/icon-ig.svg" alt="Instagram" width="24px" height="24px">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/icon-line.svg" alt="Line" width="24px" height="24px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
 
 
     <!-- script -->
