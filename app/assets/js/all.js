@@ -16,16 +16,17 @@ const customerSwiper = new Swiper(".customerSwiper",{
     delay: 3000,
     disableOnInteraction: false,
   },
+  //Swiper4.x 版本是 min-width 概念
   breakpoints:{
-    768: {
-      slidesPerView: 1,
-      slidesPerColumn: 3,
-      spaceBetween: 8,
-    },
     996: {
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 1,
+      slidesPerColumn: 3,
+      spaceBetween: 8,
     }
   }
 })
