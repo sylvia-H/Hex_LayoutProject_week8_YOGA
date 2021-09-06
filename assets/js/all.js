@@ -5,22 +5,26 @@ var courseSwiper = new Swiper('.courseSwiper', {
   spaceBetween: 30
 });
 var customerSwiper = new Swiper(".customerSwiper", {
-  slidesPerView: 1,
-  slidesPerColumn: 3,
-  spaceBetween: 8,
+  slidesPerView: 3,
+  slidesPerColumn: 2,
+  spaceBetween: 30,
   slidesPerColumnFill: 'row',
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev"
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
   breakpoints: {
     768: {
-      slidesPerView: 2,
-      slidesPerColumn: 2,
-      spaceBetween: 30
+      slidesPerView: 1,
+      slidesPerColumn: 3,
+      spaceBetween: 8
     },
     996: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 30
     }

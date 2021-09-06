@@ -11,7 +11,8 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -44,6 +45,16 @@
             <li class="nav-item">
               <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./curriculum.html">
                 當月課表
+              </a>
+            </li>
+            <li class="nav-item | d-block d-lg-none">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./reserve.html">
+                立即預約
+              </a>
+            </li>
+            <li class="nav-item | d-block d-lg-none">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./contact.html">
+                聯絡我們
               </a>
             </li>
           </ul>
@@ -91,7 +102,9 @@
       <h1 class="fs-3 text-secondary text-center | mb-6 mb-md-8">本月課表</h1>
       <div class="row">
           <div class="col-12 offset-lg-1 col-lg-10 | bg-primary rounded-4 | py-lg-9 px-lg-10">
-              <div class="table-responsive scrollbar-style">
+              <div   
+                data-aos="zoom-in" 
+                class="table-responsive scrollbar-style">
                   <table class="table table-bordered border-secondary table-hover caption-top bg-white text-secondary">
                     <caption class="fs-5 text-white">2021 07 月</caption>
                     <thead class="text-nowrap">
@@ -243,7 +256,7 @@
       <div class="container py-8">
         <div class="row">
           <div class="col-12 col-lg-8">
-            <h3 class="fs-4 fs-md-3 text-white">
+            <h3 class="fs-4 fs-md-3 text-white | mb-2 mb-lg-0">
               現在訂閱，獲得課程優惠碼！
             </h3>
           </div>
@@ -256,7 +269,7 @@
         </div>
       </div>
       <div class="border-bottom"></div>
-      <div class="container d-flex ai-c jc-sb py-8">
+      <div class="container | d-flex ai-c jc-sb | py-8">
         <!-- footer__menu -->
         <ul>
           <li class="mb-2">
@@ -276,7 +289,8 @@
         </ul>
         <!-- Copyright -->
         <div class="d-flex align-self-end">
-          <p class="h6 text-white">© 2021. All Rights Reserved.</p>
+          <p class="h6 text-white | d-none d-md-block">© 2021. All Rights Reserved.</p>
+          <p class="h6 text-white text-center | d-block d-md-none">© 2021.<br>All Rights Reserved.</p>
         </div>
         <!-- footer__community -->
         <ul class="d-flex align-self-start">
@@ -303,7 +317,8 @@
 
     <!-- script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
