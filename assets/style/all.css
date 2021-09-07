@@ -8126,6 +8126,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: 100%;
 }
 
+.ratio-2x1 {
+  --bs-aspect-ratio: calc(1 / 2 * 100%);
+}
+
 .ratio-3x2 {
   --bs-aspect-ratio: calc(2 / 3 * 100%);
 }
@@ -8140,6 +8144,10 @@ fieldset:disabled .btn {
 
 .ratio-5x8 {
   --bs-aspect-ratio: calc(8 / 5 * 100%);
+}
+
+.ratio-13x10 {
+  --bs-aspect-ratio: calc(10 / 13 * 100%);
 }
 
 .ratio-16x9 {
@@ -19596,13 +19604,6 @@ fieldset:disabled .btn {
 }
 
 /* 自定義 reset */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
 }

@@ -9,10 +9,13 @@ var customerSwiper = new Swiper(".customerSwiper", {
   observer: true,
   observeParents: true,
   loop: true,
-  slidesPerView: 3,
-  slidesPerColumn: 2,
-  spaceBetween: 30,
-  slidesPerColumnFill: 'row',
+  initialSlide: 0,
+  slidesPerView: 1,
+  spaceBetween: 8,
+  grid: {
+    rows: 3,
+    fill: 'column'
+  },
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev"
@@ -24,14 +27,20 @@ var customerSwiper = new Swiper(".customerSwiper", {
   //Swiper4.x 版本是 min-width 概念
   breakpoints: {
     996: {
-      slidesPerView: 2,
-      slidesPerColumn: 2,
-      spaceBetween: 30
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      }
     },
     768: {
-      slidesPerView: 1,
-      slidesPerColumn: 3,
-      spaceBetween: 8
+      slidesPerView: 2,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      }
     }
   }
 });
@@ -41,9 +50,12 @@ var teacherSwiper = new Swiper(".teacherSwiper", {
   observeParents: true,
   loop: true,
   initialSlide: 0,
-  slidesPerView: 3.5,
-  spaceBetween: 30,
-  slidesPerColumnFill: 'row',
+  slidesPerView: 1,
+  spaceBetween: 24,
+  grid: {
+    rows: 1,
+    fill: 'row'
+  },
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
@@ -51,12 +63,56 @@ var teacherSwiper = new Swiper(".teacherSwiper", {
   //Swiper4.x 版本是 min-width 概念
   breakpoints: {
     996: {
-      slidesPerView: 2.1,
-      spaceBetween: 30
+      slidesPerView: 3.5,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
     },
     768: {
-      slidesPerView: 1,
-      spaceBetween: 24
+      slidesPerView: 2.1,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
+    }
+  }
+});
+var recommendSwiper = new Swiper(".recommendSwiper", {
+  // 添加 observe 參數進行自動初始化
+  observer: true,
+  observeParents: true,
+  loop: true,
+  initialSlide: 0,
+  slidesPerView: 1.2,
+  spaceBetween: 24,
+  grid: {
+    rows: 1,
+    fill: 'row'
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  //Swiper4.x 版本是 min-width 概念
+  breakpoints: {
+    996: {
+      slidesPerView: 4.2,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
     }
   }
 });
