@@ -14,7 +14,7 @@ var customerSwiper = new Swiper(".customerSwiper", {
   spaceBetween: 8,
   grid: {
     rows: 3,
-    fill: 'column'
+    fill: 'row'
   },
   navigation: {
     nextEl: ".swiper-next",
