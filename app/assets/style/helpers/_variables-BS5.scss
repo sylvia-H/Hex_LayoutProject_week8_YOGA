@@ -465,7 +465,9 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default; // new
 $font-weight-bold:            700 !default;
+$font-weight-black:           900 !default; // new
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
@@ -1119,7 +1121,7 @@ $card-spacer-x:                     1.5rem; // $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                1rem; // $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $primary; // rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;

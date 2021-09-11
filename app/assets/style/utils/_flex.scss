@@ -1,73 +1,3 @@
-/* Display */
-@each $d in $display {
-    .d-#{$d}{
-        display: $d;
-    }
-}
-
-@each $d in $display {
-    @each $rwd in $rwd-reakpoints {
-        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
-            .d-#{$rwd}-#{$d}{
-                display: $d;
-            }
-        }
-    }
-}
-
-/* Position */
-@each $p in $position {
-    .pos-#{$p}{
-        position: map-get($position-base, $p);
-    }
-}
-
-@each $p in $position {
-    @each $rwd in $rwd-reakpoints {
-        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
-            .pos-#{$rwd}-#{$p}{
-                position: map-get($position-base, $p);
-            }
-        }
-    }
-}
-
-
-/* Flex */
-/* Flex Direction */
-@each $fd in $flex-direction {
-    .fd-#{$fd}{
-        flex-direction: $fd;
-    }
-}
-
-@each $fd in $flex-direction {
-    @each $rwd in $rwd-reakpoints {
-        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
-            .fd-#{$rwd}-#{$fd}{
-                flex-direction: $fd;
-            }
-        }
-    }
-}
-
-/* Flex Wrap */
-@each $fxw in $flex-wrap {
-    .fxw-#{$fxw}{
-        flex-wrap: map-get($flex-wrap-base, $fxw);
-    }
-}
-
-@each $fxw in $flex-wrap {
-    @each $rwd in $rwd-reakpoints {
-        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
-            .fxw-#{$rwd}-#{$fxw}{
-                flex-wrap: map-get($flex-wrap-base, $fxw);
-            }
-        }
-    }
-}
-
 /* justify-content */
 /* align-items */
 @each $jc in $justify-content {
@@ -83,8 +13,8 @@
 }
 
 @each $jc in $justify-content {
-    @each $rwd in $rwd-reakpoints {
-        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+    @each $rwd in $rwd-breakpoints {
+        @media (min-width:map-get($rwd-breakpoint-base, $rwd)) {
             .jc-#{$rwd}-#{$jc}{
                 justify-content: map-get($justify-content-base, $jc);
             }

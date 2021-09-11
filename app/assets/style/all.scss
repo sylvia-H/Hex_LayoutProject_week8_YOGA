@@ -9,16 +9,14 @@
 
 /* Utils */
 @import "./utils/variable";
-@import "./utils/fonts";
-@import "./utils/img";
 @import "./utils/flex";
-@import "./utils/size";
 @import "./utils/hover/hover";
+@import "./utils/img";
 @import "./utils/select";
-@import "./utils/scrollbar";
 
 /* Components */
 @import "./components/card";
+@import "./components/scrollbar";
 
 
 /* Layout */
