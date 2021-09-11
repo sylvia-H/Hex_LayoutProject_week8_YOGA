@@ -134,7 +134,7 @@ const gradeSwiper = new Swiper ('.gradeSwiper', {
         fill: 'row',
     },
     breakpoints:{
-        996: {
+        1200: {
         slidesPerView: 3,
         spaceBetween: 20,
         grid: {
@@ -142,8 +142,16 @@ const gradeSwiper = new Swiper ('.gradeSwiper', {
             fill: 'row',
             },
         },
-        768: {
+        992: {
         slidesPerView: 2.1,
+        spaceBetween: 20,
+        grid: {
+            rows: 1,
+            fill: 'row',
+            },
+        },
+        768: {
+        slidesPerView: 2,
         spaceBetween: 30,
         grid: {
             rows: 1,
