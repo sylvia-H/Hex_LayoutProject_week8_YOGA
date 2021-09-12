@@ -125,7 +125,7 @@
     <div class="row">
         <!-- 第一張卡片 -->
         <div class="col-12 col-lg-4 | mb-4 mb-md-6">
-            <div class="d-flex flex-column jc-c">
+            <div class="course__plan d-flex flex-column jc-c">
                 <div class="card w-100 | overflow-hidden" style="width: 18rem;">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-12">
@@ -138,19 +138,19 @@
                                 <h5 class="card-title text-center text-secondary | mb-1">首次體驗</h5>
                                 <h5 class="card-text text-center text-primary | mb-2">NT $450 / 次</h5>
                                 <p class="card-text text-secondary | mb-9 mb-md-6 mb-lg-9">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                                <a href="./reserve.html" class="btn btn-primary text-white | w-100">選擇課程</a>
+                                <div class="select-plan btn btn-primary text-white | w-100">選擇課程</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <span class="material-icons text-secondary fs-2 text-center mt-5 mb-5">
+                <span class="plan__arrow material-icons text-secondary fs-2 text-center mt-5 mb-5 d-none">
                     arrow_drop_down
                 </span>
             </div>
         </div>
         <!-- 第二張卡片 -->
         <div class="col-12 col-lg-4 | mb-4 mb-md-6">
-            <div class="d-flex flex-column jc-c">
+            <div class="course__plan d-flex flex-column jc-c">
                 <div class="card w-100 | overflow-hidden" style="width: 18rem;">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-12">
@@ -163,19 +163,19 @@
                                 <h5 class="card-title text-center text-secondary | mb-1">短期體驗</h5>
                                 <h5 class="card-text text-center text-primary | mb-2">NT $1800 / 月</h5>
                                 <p class="card-text text-secondary | mb-9 mb-md-6 mb-lg-9">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
-                                <a href="./reserve.html" class="btn btn-primary text-white | w-100">選擇課程</a>
+                                <div class="select-plan btn btn-primary text-white | w-100">選擇課程</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <span class="material-icons text-secondary fs-2 text-center mt-5 mb-5">
+                <span class="plan__arrow material-icons text-secondary fs-2 text-center mt-5 mb-5 d-none">
                     arrow_drop_down
                 </span>
             </div>
         </div>
         <!-- 第三張卡片 -->
         <div class="col-12 col-lg-4 | mb-4 mb-md-6">
-            <div class="d-flex flex-column jc-c">
+            <div class="course__plan d-flex flex-column jc-c">
                 <div class="card w-100 | overflow-hidden" style="width: 18rem;">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-12">
@@ -188,12 +188,12 @@
                                 <h5 class="card-title text-center text-secondary | mb-1">長期體驗</h5>
                                 <h5 class="card-text text-center text-primary | mb-2">NT $5600 / 季</h5>
                                 <p class="card-text text-secondary | mb-9 mb-md-6 mb-lg-9">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
-                                <a href="./reserve.html" class="btn btn-primary text-white | w-100">選擇課程</a>
+                                <div class="select-plan btn btn-primary text-white | w-100">選擇課程</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <span class="material-icons text-secondary fs-2 text-center mt-5 mb-5">
+                <span class="plan__arrow material-icons text-secondary fs-2 text-center mt-5 mb-5 d-none">
                     arrow_drop_down
                 </span>
             </div>
@@ -201,86 +201,90 @@
     </div>
 </section>
 
-<section class="container bg-secondary text-white | px-9 pt-8 pb-10 pt-lg-9 pb-lg-12 overflow-hidden">
-    <h3 class="fw-normal text-center | mb-6 mb-lg-8">選擇課程階級</h3>
-    <!-- swiper -->
-    <div class="gradeSwiper swiper-container">
-        <div class="swiper-wrapper">
-        <!-- 第一張 -->
-        <div class="swiper-slide">
-            <div class="shadow bg-primary text-white rounded-4 px-6 py-6">
-                <div class="d-flex jc-sb">
-                    <h3 class="fs-3 fs-md-4 fs-lg-3">基礎 Basic</h3>
-                    <span class="material-icons-outlined fs-1">
-                        check_circle_outline
-                    </span>
+<section class="course__grades container bg-secondary text-white | overflow-hidden">
+    <div class="px-9 pt-8 pb-10 pt-lg-9 pb-lg-12">
+        <h3 class="fw-normal text-center | mb-6 mb-lg-8">選擇課程階級</h3>
+        <!-- swiper -->
+        <div class="gradeSwiper swiper-container">
+            <div class="swiper-wrapper">
+            <!-- 第一張 -->
+            <div class="swiper-slide">
+                <div class="select-grade shadow bg-primary text-white rounded-4 px-6 py-6">
+                    <div class="d-flex jc-sb">
+                        <h3 class="fs-3 fs-md-4 fs-lg-3">基礎 Basic</h3>
+                        <span class="material-icons-outlined fs-1 opacity-50">
+                            check_circle_outline
+                        </span>
+                    </div>
+                    <h6 class="d-flex ai-c me-lg-2 mb-lg-4">
+                        基礎課程
+                        <span class="bg-secondary rounded-pill | px-4 py-1 ms-lg-2">
+                            <small>60 min</small>
+                        </span>
+                    </h6>
+                    <ul>
+                        <li>・入體位法動作解說</li>
+                        <li>・瑜珈基礎動作、順位</li>
+                        <li>・適合任何階段練習者</li>
+                    </ul>
                 </div>
-                <h6 class="d-flex ai-c me-lg-2 mb-lg-4">
-                    基礎課程
-                    <span class="bg-secondary rounded-pill | px-4 py-1 ms-lg-2">
-                        <small>60 min</small>
-                    </span>
-                </h6>
-                <ul>
-                    <li>・入體位法動作解說</li>
-                    <li>・瑜珈基礎動作、順位</li>
-                    <li>・適合任何階段練習者</li>
-                </ul>
             </div>
-        </div>
-        
-        <!-- 第二張 -->
-        <div class="swiper-slide">
-            <div class="shadow bg-primary text-white rounded-4 px-6 py-6">
-                <div class="d-flex jc-sb">
-                    <h3 class="fs-3 fs-md-4 fs-lg-3">中階 Intermediate</h3>
-                    <span class="material-icons-outlined fs-1 opacity-50">
-                        check_circle_outline
-                    </span>
+            
+            <!-- 第二張 -->
+            <div class="swiper-slide">
+                <div class="select-grade shadow bg-primary text-white rounded-4 px-6 py-6">
+                    <div class="d-flex jc-sb">
+                        <h3 class="fs-3 fs-md-4 fs-lg-3">中階 Intermediate</h3>
+                        <span class="material-icons-outlined fs-1 opacity-50">
+                            check_circle_outline
+                        </span>
+                    </div>
+                    <h6 class="d-flex ai-c me-lg-2 mb-lg-4">
+                        艾揚格、哈達、寰宇
+                        <span class="bg-secondary rounded-pill | px-4 py-1 ms-lg-2">
+                            <small>60 min</small>
+                        </span>
+                    </h6>
+                    <ul>
+                        <li>・刺激身體七個層次為核心</li>
+                        <li>・結合流暢體位法練習、呼吸、觀想</li>
+                        <li>・適合半年以上練習者</li>
+                    </ul>
                 </div>
-                <h6 class="d-flex ai-c me-lg-2 mb-lg-4">
-                    艾揚格、哈達、寰宇
-                    <span class="bg-secondary rounded-pill | px-4 py-1 ms-lg-2">
-                        <small>60 min</small>
-                    </span>
-                </h6>
-                <ul>
-                    <li>・刺激身體七個層次為核心</li>
-                    <li>・結合流暢體位法練習、呼吸、觀想</li>
-                    <li>・適合半年以上練習者</li>
-                </ul>
             </div>
-        </div>
-        
-        <!-- 第三張 -->
-        <div class="swiper-slide">
-            <div class="shadow bg-primary text-white rounded-4 px-6 py-6">
-                <div class="d-flex jc-sb">
-                    <h3 class="fs-3 fs-md-4 fs-lg-3">高階 Advanced</h3>
-                    <span class="material-icons-outlined fs-1 opacity-50">
-                        check_circle_outline
-                    </span>
+            
+            <!-- 第三張 -->
+            <div class="swiper-slide">
+                <div class="select-grade shadow bg-primary text-white rounded-4 px-6 py-6">
+                    <div class="d-flex jc-sb">
+                        <h3 class="fs-3 fs-md-4 fs-lg-3">高階 Advanced</h3>
+                        <span class="material-icons-outlined fs-1 opacity-50">
+                            check_circle_outline
+                        </span>
+                    </div>
+                    <h6 class="d-flex ai-c me-lg-2 mb-lg-4">
+                        阿斯坦加、陰陽
+                        <span class="bg-secondary rounded-pill | px-4 py-1 ms-lg-2">
+                            <small>60 min</small>
+                        </span>
+                    </h6>
+                    <ul>
+                        <li>・充分打開身體每個部位</li>
+                        <li>・顯著提升力量與柔軟度</li>
+                        <li>・適合一年以上練習者</li>
+                    </ul>
                 </div>
-                <h6 class="d-flex ai-c me-lg-2 mb-lg-4">
-                    阿斯坦加、陰陽
-                    <span class="bg-secondary rounded-pill | px-4 py-1 ms-lg-2">
-                        <small>60 min</small>
-                    </span>
-                </h6>
-                <ul>
-                    <li>・充分打開身體每個部位</li>
-                    <li>・顯著提升力量與柔軟度</li>
-                    <li>・適合一年以上練習者</li>
-                </ul>
             </div>
+            
         </div>
-        
     </div>
 </section>
 
 <section class="container text-secondary text-center | pt-8 pt-lg-9 pb-15 pb-md-14 pb-lg-16">
-    <p class="mb-1">您選擇的是</p>
-    <p class="fs-5 mb-9">首次體驗課程-<span class="course__grade">基礎</span></p>
+    <div class="course__solution d-none">
+        <p class="mb-1">您選擇的是</p>
+        <p class="fs-5 mb-9"><span id="course__plan">首次體驗</span>課程-<span id="course__grade">基礎</span></p>
+    </div>
     <!-- 預約須知 -->
     <div class="row">
         <div class="col-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6 | text-secondary">

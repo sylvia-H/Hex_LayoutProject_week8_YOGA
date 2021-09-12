@@ -25771,5 +25771,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 /* Layout */
+.course__grades {
+  height: 0px;
+  -webkit-transition: height .6s ease-in;
+  -o-transition: height .6s ease-in;
+  transition: height .6s ease-in;
+}
+
+.course__grades__show {
+  height: 368px;
+  -webkit-transition: height .6s ease-in;
+  -o-transition: height .6s ease-in;
+  transition: height .6s ease-in;
+}
+
+@media screen and (max-width: 767px) {
+  .course__grades__show {
+    height: 704px;
+  }
+}
 
 /*# sourceMappingURL=all.css.map */
