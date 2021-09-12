@@ -6,11 +6,6 @@ const courseSwiper = new Swiper ('.courseSwiper', {
 
 // 首頁 - 聽聽他們怎麼說 - 顧客意見
 const customerSwiper = new Swiper(".customerSwiper",{
-    // 添加 observe 參數進行自動初始化
-    observer:true,
-    observeParents:true,
-    loop: true,
-    initialSlide: 0,
     slidesPerView: 1,
     spaceBetween: 8,
     grid: {
@@ -25,22 +20,21 @@ const customerSwiper = new Swiper(".customerSwiper",{
         delay: 3000,
         disableOnInteraction: false,
     },
-    //Swiper4.x 版本是 min-width 概念
     breakpoints:{
         996: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        grid: {
-            rows: 2,
-            fill: 'row',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grid: {
+                rows: 2,
+                fill: 'row',
             },
         },
         768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        grid: {
-            rows: 2,
-            fill: 'row',
+            slidesPerView: 2,
+            spaceBetween: 30,
+            grid: {
+                rows: 2,
+                fill: 'row',
             },
         }
     }
@@ -51,8 +45,8 @@ const teacherSwiper = new Swiper(".teacherSwiper",{
     // 添加 observe 參數進行自動初始化
     observer:true,
     observeParents:true,
-    loop: true,
     initialSlide: 0,
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 24,
     grid: {
