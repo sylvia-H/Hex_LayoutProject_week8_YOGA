@@ -1,0 +1,61 @@
+---
+title: DOYOGA
+layout: ./app/layout.ejs
+engine: ejs
+current: reserve-finish
+---
+
+<!-- 填寫資料 -->
+<section class="container | pt-10 pt-md-12 pb-15 pb-md-14 pb-lg-16">
+    <h1 class="fs-3 text-secondary text-center | mb-6 mb-md-4">
+        立即預約
+    </h1>
+    <!-- 預約流程 -->
+    <ul class="row mb-8">
+        <li class="col-4 offset-md-3 col-md-2">
+            <div class="bg-light text-secondary text-center rounded-4 py-5 px-3 py-md-3 px-lg-10">
+                選擇方案
+            </div>
+        </li>
+        <li class="col-4 col-md-2">
+            <div class="bg-light text-secondary text-center rounded-4 py-5 px-3 py-md-3 px-lg-10">
+                填寫資料
+            </div>
+        </li>
+        <li class="col-4 col-md-2">
+            <div class="bg-secondary text-white text-center rounded-4 py-5 px-3 py-md-3 px-lg-10">
+                完成預約
+            </div>
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-12 offset-md-3 col-md-6 text-secondary">
+            <div class="text-center mb-5">
+                <span class="material-icons-outlined fs-1">
+                    check_circle_outline
+                </span>
+            </div>
+            <p class="fs-5 text-center mb-8">已完成預約，以下是您的預約資訊:</p>
+            <div class="accordion" id="accordion_reserveInfo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="accordion_reserveInfo_header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_reserveInfo_body" aria-expanded="true" aria-controls="accordion_reserveInfo_body">
+                        預約資訊
+                    </button>
+                  </h2>
+                  <div id="accordion_reserveInfo_body" class="accordion-collapse collapse show" aria-labelledby="accordion_reserveInfo_header" data-bs-parent="#accordion_reserveInfo">
+                    <div class="accordion-body">
+                      <p class="fw-medium">您預約的是<span id="checked_course" class="text-primary ms-2 fs-5"></span></p>
+                      <p>上課預約報到日：<span id="checked_date" class="ms-2 fs-5"></span></p>
+                      <p>預約人：<span id="checked_name"></span></p>
+                      <p>年齡：<span id="checked_age"></span> 歲</p>
+                      <p>性別：<span id="checked_gender"></span></p>
+                      <p>電子信箱：<span id="checked_email"></span></p>
+                      <p>手機號碼：<span id="checked_phone"></span></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
