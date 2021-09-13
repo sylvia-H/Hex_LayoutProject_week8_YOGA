@@ -130,7 +130,7 @@
                 </span>
             </div>
             <p class="fs-5 text-center mb-8">已完成預約，以下是您的預約資訊:</p>
-            <div class="accordion" id="accordion_reserveInfo">
+            <div class="accordion mb-6" id="accordion_reserveInfo">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="accordion_reserveInfo_header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_reserveInfo_body" aria-expanded="true" aria-controls="accordion_reserveInfo_body">
@@ -139,20 +139,46 @@
                   </h2>
                   <div id="accordion_reserveInfo_body" class="accordion-collapse collapse show" aria-labelledby="accordion_reserveInfo_header" data-bs-parent="#accordion_reserveInfo">
                     <div class="accordion-body">
-                      <p class="fw-medium">您預約的是<span id="checked_course" class="text-primary ms-2 fs-5"></span></p>
-                      <p>上課預約報到日：<span id="checked_date" class="ms-2 fs-5"></span></p>
-                      <p>預約人：<span id="checked_name"></span></p>
-                      <p>年齡：<span id="checked_age"></span> 歲</p>
-                      <p>性別：<span id="checked_gender"></span></p>
-                      <p>電子信箱：<span id="checked_email"></span></p>
+                      <p class="fw-medium mb-4">您預約的是<span id="checked_course" class="text-primary ms-2 fs-5"></span></p>
+                      <p class="mb-2">上課預約報到日：<span id="checked_date" class="ms-2 fs-5"></span></p>
+                      <p class="mb-2">預約人：<span id="checked_name"></span></p>
+                      <p class="mb-2">年齡：<span id="checked_age"></span> 歲</p>
+                      <p class="mb-2">性別：<span id="checked_gender"></span></p>
+                      <p class="mb-2">電子信箱：<span id="checked_email"></span></p>
                       <p>手機號碼：<span id="checked_phone"></span></p>
                     </div>
                   </div>
                 </div>
             </div>
         </div>
+        <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4 text-secondary">
+            <p class="fs-5 text-center mb-2">上課注意事項</p>
+            <p class="mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <a href="./index.html">
+                <button id="btn-reserveform" type="submit" class="btn btn-primary text-white fs-5 w-100">返回首頁</button>
+            </a>
+        </div>
     </div>
 </section>
+
+
+<script>
+// 從 sessionStorage 取值代入 第三預約頁-完成預約
+  const checked_course = document.getElementById('checked_course');
+  const checked_date = document.getElementById('checked_date');
+  const checked_name = document.getElementById('checked_name');
+  const checked_age = document.getElementById('checked_age');
+  const checked_gender = document.getElementById('checked_gender');
+  const checked_email = document.getElementById('checked_email');
+  const checked_phone = document.getElementById('checked_phone');
+  checked_course.innerText = window.sessionStorage.getItem('solution_final');
+  checked_date.innerText = window.sessionStorage.getItem('form_date');
+  checked_name.innerText = window.sessionStorage.getItem('form_name');
+  checked_age.innerText = window.sessionStorage.getItem('form_age');
+  checked_gender.innerText = window.sessionStorage.getItem('form_gender');
+  checked_email.innerText = window.sessionStorage.getItem('form_email');
+  checked_phone.innerText = window.sessionStorage.getItem('form_phone');
+</script>
 
     </main>
 

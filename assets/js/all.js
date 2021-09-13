@@ -20,14 +20,7 @@ $(function () {
   var btn_reserve_continue = document.getElementById('btn-reserve-continue');
   var course__solution_final;
   var reserveInfo__solution_final = document.getElementById('reserveInfo__solution_final');
-  var btn_reserveform = document.getElementById('btn-reserveform');
-  var checked_course = document.getElementById('checked_course');
-  var checked_date = document.getElementById('checked_date');
-  var checked_name = document.getElementById('checked_name');
-  var checked_age = document.getElementById('checked_age');
-  var checked_gender = document.getElementById('checked_gender');
-  var checked_email = document.getElementById('checked_email');
-  var checked_phone = document.getElementById('checked_phone'); // setTimeout function
+  var btn_reserveform = document.getElementById('btn-reserveform'); // setTimeout function
 
   function reAdd_gradeShow() {
     course__grades.classList.add('course__grades__show');
@@ -106,28 +99,22 @@ $(function () {
     });
   }); // 從 sessionStorage 取值代入 第二預約頁-填寫資料
 
-  reserveInfo__solution_final.innerText = window.sessionStorage.getItem('solution_final'); // 完成填寫預約表單，按鈕加上 addEventListener，並把資料存入 sessionStorage
-
-  var form_date = $('#form_date').val();
-  var form_name = $('#form_name').val();
-  var form_age = $('#form_age').val();
-  var form_gender = $('#form_gender').val();
-  var form_email = $('#form_email').val();
-  var form_phone = $('#form_phone').val();
-  window.sessionStorage.setItem('form_date', form_date);
-  window.sessionStorage.setItem('form_name', form_name);
-  window.sessionStorage.setItem('form_age', form_age);
-  window.sessionStorage.setItem('form_gender', form_gender);
-  window.sessionStorage.setItem('form_email', form_email);
-  window.sessionStorage.setItem('form_phone', form_phone); // 從 sessionStorage 取值代入 第三預約頁-完成預約
-
-  checked_course.innerText = window.sessionStorage.getItem('solution_final');
-  checked_date.innerText = window.sessionStorage.getItem('form_date');
-  checked_name.innerText = window.sessionStorage.getItem('form_name');
-  checked_age.innerText = window.sessionStorage.getItem('form_age');
-  checked_gender.innerText = window.sessionStorage.getItem('form_gender');
-  checked_email.innerText = window.sessionStorage.getItem('form_email');
-  checked_phone.innerText = window.sessionStorage.getItem('form_phone');
+  reserveInfo__solution_final.innerText = window.sessionStorage.getItem('solution_final');
+  btn_reserveform.addEventListener('click', function (e) {
+    // 完成填寫預約表單，按鈕加上 addEventListener，並把資料存入 sessionStorage
+    var form_date = document.getElementById('form_date').value;
+    var form_name = document.getElementById('form_name').value;
+    var form_age = document.getElementById('form_age').value;
+    var form_gender = document.getElementById('form_gender').value;
+    var form_email = document.getElementById('form_email').value;
+    var form_phone = document.getElementById('form_phone').value;
+    window.sessionStorage.setItem('form_date', form_date);
+    window.sessionStorage.setItem('form_name', form_name);
+    window.sessionStorage.setItem('form_age', form_age);
+    window.sessionStorage.setItem('form_gender', form_gender);
+    window.sessionStorage.setItem('form_email', form_email);
+    window.sessionStorage.setItem('form_phone', form_phone);
+  });
 });
 "use strict";
 
