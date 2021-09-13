@@ -15,6 +15,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" /> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -280,19 +281,26 @@
     </div>
 </section>
 
-<section class="container text-secondary text-center | pt-8 pt-lg-9 pb-15 pb-md-14 pb-lg-16">
-    <div class="course__solution d-none">
+<section class="container text-secondary | pt-8 pt-lg-9 pb-15 pb-md-14 pb-lg-16">
+    <div class="course__solution text-center d-none">
         <p class="mb-1">您選擇的是</p>
-        <p class="fs-5 mb-9"><span id="course__plan">首次體驗</span>課程-<span id="course__grade">基礎</span></p>
+        <p id="course__solution-final" class="fs-5 mb-9"><span id="course__plan">首次體驗</span>課程-<span id="course__grade">基礎</span></p>
     </div>
     <!-- 預約須知 -->
     <div class="row">
-        <div class="col-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6 | text-secondary">
+        <div class="col-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6 | text-secondary mb-8">
             <h3 class="fw-normal text-center | mb-4">預約須知</h3>
             <p class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</p>
             <p class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</p>
             <p class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</p>
             <p>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</p>
+        </div>
+        <div id="btn-reserve-continue" class="col-12 offset-md-4 col-md-4 d-none">
+            <a href="./reserve-info.html">
+                <div class="btn btn-primary text-white py-2 w-100">
+                    繼續預約
+                </div>
+            </a>
         </div>
     </div>
 </section>
@@ -369,6 +377,7 @@
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script> -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

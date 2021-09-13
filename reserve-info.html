@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light | py-5">
+      <div class="container">
+        <!-- DOYOGA-logo -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/images/DOYOGA-logo.png" alt="DOYOGA" width="96px" height="31px">
+        </a>
+        <!-- 漢堡 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 選單內容 -->
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item | me-4">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./course.html">
+                課程介紹
+              </a>
+            </li>
+            <li class="nav-item | me-4">
+              <a class="nav-link text-dark | hvr-underline-from-center" href="./environment.html">
+                瑜珈空間
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./curriculum.html">
+                當月課表
+              </a>
+            </li>
+            <li class="nav-item | d-block d-lg-none">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./reserve.html">
+                立即預約
+              </a>
+            </li>
+            <li class="nav-item | d-block d-lg-none">
+              <a class="nav-link text-dark | hvr-underline-from-center" aria-current="page" href="./contact.html">
+                聯絡我們
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="d-none d-lg-flex">
+          <li class="nav-item | me-4">
+            <a class="btn btn-outline-secondary rounded-pill" href="./reserve.html">
+              立即預約
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary rounded-pill" href="./contact.html">
+              聯絡我們
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main 主內容區 -->
+
+    <main class="position-relative overflow-hidden">
+      <!-- main__community -->
+      <ul class="d-none d-lg-block | position-fixed top-50 end-0 translate-middle-y | mx-4">
+        <li class="mb-2">
+          <a href="#" class="link-secondary">
+            <i class="fab fa-facebook fa-3x"></i>
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="link-secondary">
+            <i class="fab fa-instagram fa-3x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link-secondary">
+              <i class="fab fa-line fa-3x"></i>
+          </a>
+        </li>
+      </ul>
+
+      
+<!-- 填寫資料 -->
+<section class="container | pt-10 pt-md-12 pb-15 pb-md-14 pb-lg-16">
+    <h1 class="fs-3 text-secondary text-center | mb-6 mb-md-4">
+        立即預約
+    </h1>
+    <!-- 預約流程 -->
+    <ul class="row mb-8">
+        <li class="col-4 offset-md-3 col-md-2">
+            <div class="bg-light text-secondary text-center rounded-4 py-5 px-3 py-md-3 px-lg-10">
+                選擇方案
+            </div>
+        </li>
+        <li class="col-4 col-md-2">
+            <div class="bg-secondary text-white text-center rounded-4 py-5 px-3 py-md-3 px-lg-10">
+                填寫資料
+            </div>
+        </li>
+        <li class="col-4 col-md-2">
+            <div class="bg-light text-secondary text-center rounded-4 py-5 px-3 py-md-3 px-lg-10">
+                完成預約
+            </div>
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-12 offset-md-4 col-md-4">
+            <div class="d-flex jc-c | mb-6 mb-md-8">
+                <p class="text-dark me-4">您選擇的是</p>
+                <h5 id="reserveInfo__solution_final" class="text-primary"></h5>
+            </div>
+            <form class="text-dark" action="./reserve-finish.html">
+                <div class="mb-8">
+                    <h6 class="mb-4">1. 是否接觸過瑜珈?</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="q1" id="q1_yes" value="q1_yes">
+                        <label class="form-check-label" for="q1_yes">是</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="q1" id="q1_no" value="q1_no">
+                        <label class="form-check-label" for="q1_no">否</label>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h6 class="mb-4">2. 想改善的生活問題?</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="q2_muscle" value="q2_muscle">
+                        <label class="form-check-label" for="q2_muscle">肌耐力不足</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="q2_softness" value="q2_softness">
+                        <label class="form-check-label" for="q2_softness">柔軟度不佳</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="q2_stress" value="q2_stress">
+                        <label class="form-check-label" for="q2_stress">壓力大</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="q2_posture" value="q2_posture">
+                        <label class="form-check-label" for="q2_posture">姿勢不正</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="q2_sleep" value="q2_sleep">
+                        <label class="form-check-label" for="q2_sleep">睡眠品質差</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="q2_attention" value="q2_attention">
+                        <label class="form-check-label" for="q2_attention">注意力不足</label>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h6 class="mb-4">3. 每週累積運動量約為多少？</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q3_150" value="q3_150">
+                        <label class="form-check-label" for="q3_150">150 分鐘以上</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q3_75_150" value="q3_75_150">
+                        <label class="form-check-label" for="q3_75_150">75~150 分鐘</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q3_30_75" value="q3_30_75">
+                        <label class="form-check-label" for="q3_30_75">30~75 分鐘</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q3_30" value="q3_30">
+                        <label class="form-check-label" for="q3_30">30 分鐘以下</label>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h6 class="mb-1">4. 上課預約報到日</h6>
+                    <p class="mb-2"><small>若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small></p>
+                    <input id="form_date" type="text" class="border border-primary rounded-2 py-1 px-1" placeholder="MM/DD/YYYY" name="datepicker">
+                </div>
+                <div class="row mb-4">
+                    <h6 class="mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</h6>
+                    <div class="col-6">
+                        <label for="form_name" class="form-label mb-2">姓名</label>
+                        <input type="text" class="form-control" id="form_name" placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="col-6">
+                        <label for="form_age" class="form-label mb-2">年齡</label>
+                        <input type="number" class="form-control" id="form_age" placeholder="請輸入您的年齡">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="fs-6">性別</p>
+                    <select id="form_gender" class="form-select" aria-label="gender">
+                        <option value="男">男</option>
+                        <option value="女" selected>女</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                  <label for="form_email" class="form-label mb-2">電子信箱</label>
+                  <input type="email" class="form-control" id="form_email" placeholder="email@example.com">
+                </div>
+                <div class="mb-8">
+                  <label for="form_phone" class="form-label mb-2">手機號碼</label>
+                  <input type="tel" class="form-control" id="form_phone" placeholder="0912-345-678">
+                </div>
+                <button id="btn-reserveform" type="submit" class="btn btn-primary text-white w-100">送出</button>
+            </form>
+        </div>
+    </div>
+    
+</section>
+
+
+<script>
+      
+  // DatePicker 設定
+  const elem = document.querySelector('input[name="datepicker"]');
+  const datepicker = new Datepicker(elem, {
+    nextArrow: '>',
+    prevArrow: '<'
+  });
+
+</script>
+
+    </main>
+
+    
+    <!-- footer 頁尾 -->
+    <footer class="bg-secondary">
+      <div class="container py-8">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h3 class="fs-4 fs-md-3 text-white | mb-2 mb-lg-0">
+              現在訂閱，獲得課程優惠碼！
+            </h3>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="input-group w-100">
+              <input type="text" class="form-control" placeholder="請輸入您的電子信箱" aria-label="Subscriber's email address">
+              <button class="btn btn-primary text-white px-4 py-2" type="button">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-bottom"></div>
+      <div class="container | d-flex ai-c jc-sb | py-8">
+        <!-- footer__menu -->
+        <ul>
+          <li class="mb-2">
+            <a href="#">
+              <img src="./assets/images/DOYOGA.png" alt="DOYOGA" width="96px" height="31px">
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="h6 fw-light text-white" href="./course.html">課程介紹</a>
+          </li>
+          <li class="mb-2">
+            <a class="h6 fw-light text-white" href="./environment.html">瑜珈空間</a>
+          </li>
+          <li class="mb-2">
+            <a class="h6 fw-light text-white" href="./curriculum.html">當月課表</a>
+          </li>
+        </ul>
+        <!-- Copyright -->
+        <div class="d-flex align-self-end">
+          <p class="h6 text-white | d-none d-md-block">© 2021. All Rights Reserved.</p>
+          <p class="h6 text-white text-center | d-block d-md-none">© 2021.<br>All Rights Reserved.</p>
+        </div>
+        <!-- footer__community -->
+        <ul class="d-flex align-self-start">
+          <li class="me-2">
+            <a href="#" class="link-white">
+              <i class="fab fa-facebook fs-4"></i>
+            </a>
+          </li>
+          <li class="me-2">
+            <a href="#" class="link-white">
+              <i class="fab fa-instagram fs-4"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-white">
+              <i class="fab fa-line fs-4"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
