@@ -22,6 +22,7 @@ $(function() {
   // 三個方案加上 addEventListener
   plans.forEach((el) => {
     el.addEventListener('click', (e) => {
+      sessionStorage.clear();
       // 移除所有 planCard 的 border-4 屬性
       course__plan.forEach((plan) => {
         if(!plan.classList.contains('d-lg-block')){
@@ -103,6 +104,13 @@ $(function() {
 
   // 從 sessionStorage 取值代入 第二預約頁-填寫資料
   reserveInfo__solution_final.innerText = window.sessionStorage.getItem('solution_final');
+
+   
+  // DatePicker 設定
+  const elem = document.querySelector('input[name="datepicker"]');
+  const datepicker = new Datepicker(elem, {
+    autohide: true,
+  });
 
 
   btn_reserveform.addEventListener('click', (e) => {
