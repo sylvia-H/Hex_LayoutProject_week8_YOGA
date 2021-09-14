@@ -29,7 +29,8 @@ $(function () {
 
   plans.forEach(function (el) {
     el.addEventListener('click', function (e) {
-      // 移除所有 planCard 的 border-4 屬性
+      sessionStorage.clear(); // 移除所有 planCard 的 border-4 屬性
+
       course__plan.forEach(function (plan) {
         if (!plan.classList.contains('d-lg-block')) {
           plan.classList.add('d-none');
@@ -99,7 +100,12 @@ $(function () {
     });
   }); // 從 sessionStorage 取值代入 第二預約頁-填寫資料
 
-  reserveInfo__solution_final.innerText = window.sessionStorage.getItem('solution_final');
+  reserveInfo__solution_final.innerText = window.sessionStorage.getItem('solution_final'); // DatePicker 設定
+
+  var elem = document.querySelector('input[name="datepicker"]');
+  var datepicker = new Datepicker(elem, {
+    autohide: true
+  });
   btn_reserveform.addEventListener('click', function (e) {
     // 完成填寫預約表單，按鈕加上 addEventListener，並把資料存入 sessionStorage
     var form_date = document.getElementById('form_date').value;
